@@ -1,0 +1,30 @@
+<form>
+  <div class="card card-container">
+      <h2 class="Titulo">Bienvenido!</h2>
+      <p User="profile-name" class="profile-name-card"></p>
+      <form class="form-signin" [formGroup]="LoginForm" (ngSubmit)="onSubmit()" #formpro="ngForm">
+          <span User="reauth-User" class="reauth-User"></span>
+          <div class="form-group">
+              <input type="User" class="fa fa-address-card-o" formControlName="User" ngModel name="User" User="User" class="form-control"
+                  placeholder="Usuario" required email>
+              <p class="alert alert-danger" *ngIf="LoginForm.controls.User.invalid && LoginForm.controls.User.touched">El campo es obligatorio </p>
+          </div>
+          <div class="form-group">
+              <input type="password" formControlName="Password" ngModel id="Password" name="Password" class="form-control" placeholder="contraseña"
+                  required>
+              <p class="alert alert-danger" *ngIf="LoginForm.controls.Password.invalid && LoginForm.controls.Password.touched">El campo es obligatorio</p>
+          </div>
+        
+          <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" [disabled]="!LoginForm.valid">Entrar<i class="fa fa-sign-in"></i></button>
+          <div class="alert" *ngIf="b==true">
+              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+              Usuario o contraseña no valida </div>
+      
+      </form>
+      <hr>
+      <a [routerLink]="['/OlvideMiPassword']" class="forgot-password" style="color: aliceblue" >
+          Olvide mi contraseña
+      </a>
+      <hr>
+  </div>
+</form>

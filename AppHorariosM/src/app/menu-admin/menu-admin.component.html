@@ -1,0 +1,194 @@
+
+<!-- 
+ <div class="navbar-header">
+        <div  class="navbar-header " >
+                <a [routerLink]="['/inicio']" class="navbar-brand Titulo"><span class="glyphicon glyphicon-star Estrella"></span>{{title}}</a>
+        </div>
+        <ul class="nav navbar-nav" *ngIf="Menu">
+                <li><a [routerLink]="['/inicio']"><span class="glyphicon glyphicon-home"></span>Inicio</a></li>
+              
+                <li class=" dropdown"><a [routerLink]="['/facturaHOME']" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Facturacion <span class=""></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a [routerLink]="['/facturaR']">Registrar</a></li>
+                            <li><a href="#">Consultar</a></li>
+                            <li><a href="#">Modificar</a></li>
+                        </ul>
+                    </li>
+                    <li class=" dropdown"><a [routerLink]="['/Empleados']" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empleados <span class=""></span></a>
+                        <ul class="dropdown-menu">
+                                        <li><a [routerLink]="['/EmpleadosR']">Registrar</a></li>
+                                        <li><a [routerLink]="['/EmpleadosL']">Consultar</a></li>
+                                        <li><a href="#">Modificar</a></li>
+                        </ul>
+                    </li>
+         
+                <li class=" dropdown"><a [routerLink]="['/VehiculosH']" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehiculos <span class=""></span></a>
+                        <ul class="dropdown-menu">
+                                        <li><a [routerLink]="['/Vehiculos']">Registrar</a></li>
+                                        <li><a [routerLink]="['/VehiculoL']">Lista</a></li>
+                                        <li><a href="#">Modificar</a></li>
+                        </ul>
+                    </li>
+                
+                <li class=" dropdown"><a [routerLink]="['/HomeProveedor']" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Provedores <span class=""></span></a>
+                        <ul class="dropdown-menu">
+                                        <li><a >Registrar</a></li>
+                                        <li><a [routerLink]="['/proveedor']">Consultar</a></li>
+                                        <li><a href="#">Modificar</a></li>
+                        </ul>
+                    </li>
+                    <li class=" dropdown"><a [routerLink]="['/Viajes']" class="dropdown-toggle active glyphicon glyphicon-road VIAJE" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Viajes <span class=""></span></a>
+                        <ul class="dropdown-menu">
+                                        <li><a >Registrar</a></li>
+                                        <li><a [routerLink]="['/ViajesC']">Consultar</a></li>
+                                        <li><a href="#">Modificar</a></li>
+                        </ul>
+                    </li>
+                    <li class=" dropdown"><a [routerLink]="['/UserH']" class="dropdown-toggle active glyphicon glyphicon-road VIAJE" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UsersPost <span class=""></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a [routerLink]="['/UserPost']">Registrar Nuevo Usuario</a></li>
+                                
+                            <li><a [routerLink]="['/UserL']">Lista  de Usuarios</a></li>
+                        </ul>
+                    </li>
+
+         </ul>
+   
+         
+    <!-- </div> -->
+
+
+  
+     <!-- <nav class="navbar navbar-inverse  "  *ngIf="Menu">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> 
+                </button>
+                <a [routerLink]="['/inicio']" class="navbar-brand Titulo"><span class="glyphicon glyphicon-star Estrella"></span>{{title}}</a>
+            </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                        <li><a [routerLink]="['/inicio']"><span class="glyphicon glyphicon-home"></span>Inicio</a></li>
+                        <li class=" dropdown"><a [routerLink]="['/facturaHOME']" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Facturacion <span class=""></span></a>
+                    <li class=" dropdown"><a [routerLink]="['/Empleados']" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empleados <span class=""></span></a>
+                <li class=" dropdown"><a [routerLink]="['/VehiculosH']" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehiculos <span class=""></span></a>
+                    <li class=" dropdown"><a [routerLink]="['/HomeProveedor']" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Provedores <span class=""></span></a>
+                        <li class=" dropdown"><a [routerLink]="['/Viajes']" class="dropdown-toggle active glyphicon glyphicon-road VIAJE" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Viajes <span class=""></span></a>
+                            <li class=" dropdown"><a [routerLink]="['/UserH']" class="dropdown-toggle active glyphicon glyphicon-road VIAJE" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UsersPost <span class=""></span></a>
+                                <li class=" dropdown"><a [routerLink]="['/ClienteR']" class="dropdown-toggle active glyphicon glyphicon-road VIAJE" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CLIENTE <span class=""></span></a>
+                                    <li class=" dropdown"><a [routerLink]="['/RemolqueR']" class="dropdown-toggle active glyphicon glyphicon-road VIAJE" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">REMOLQUER <span class=""></span></a>
+                                        
+                </ul>
+                <ul class="nav navbar-nav">
+
+                        <app-munu-usuario></app-munu-usuario>
+
+                </ul>
+                
+              </div>
+            </div>
+           
+            
+          </nav>  -->
+       
+
+<!--           
+          <div class="container2">
+            <div class="row ">
+                <div class="col-md-3">
+                    <ul class="nav  nav-stacked admin-menu navbar navbar-inverse ">
+                        <li><a [routerLink]="['/inicio']"><span class="glyphicon glyphicon-home"></span>Inicio</a></li>
+                        <li class=" dropdown"><a [routerLink]="['/facturaHOME']" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Facturacion <span class=""></span></a>
+                    <li class=" dropdown"><a [routerLink]="['/Empleados']" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empleados <span class=""></span></a>
+                <li class=" dropdown"><a [routerLink]="['/VehiculosH']" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehiculos <span class=""></span></a>
+                    <li class=" dropdown"><a [routerLink]="['/HomeProveedor']" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Provedores <span class=""></span></a>
+                        <li class=" dropdown"><a [routerLink]="['/Viajes']" class="dropdown-toggle active glyphicon glyphicon-road VIAJE" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Viajes <span class=""></span></a>
+                            <li class=" dropdown"><a [routerLink]="['/UserH']" class="dropdown-toggle active glyphicon glyphicon-road VIAJE" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UsersPost <span class=""></span></a>
+                                <li class=" dropdown"><a [routerLink]="['/ClienteR']" class="dropdown-toggle active glyphicon glyphicon-road VIAJE" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CLIENTE <span class=""></span></a>
+                                    <li class=" dropdown"><a [routerLink]="['/RemolqueR']" class="dropdown-toggle active glyphicon glyphicon-road VIAJE" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">REMOLQUER <span class=""></span></a>
+                                        
+                    </ul>
+                </div>
+                <div class="col-md-9  " id="home">
+                  
+
+                    <router-outlet></router-outlet>
+                </div>
+              
+            
+        </div> -->
+        <div class="row" >
+          <!-- uncomment code for absolute positioning tweek see top comment in css -->
+          <!-- <div class="absolute-wrapper"> </div> -->
+          <!-- Menu -->
+          <div class="side-menu"   style=" overflow: scroll;">
+          
+ 
+          
+      <nav class="navbar navbar-inverse" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          
+          <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span> 
+                    </button>
+
+                </div>
+                </div>
+          <!-- Main Menu -->
+          <div class="collapse navbar-collapse" id="myNavbar">
+        
+              
+              <ul class="nav navbar-nav">
+
+                      <li class="panel panel-default" id="dropdown">
+                              <a data-toggle="collapse" href="#dropdown-lvl11">
+                                  <span class="glyphicon glyphicon-user"></span> EMPLEADOS <span class="caret"></span>
+                              </a>
+              
+                              <!-- Dropdown level 1 -->
+                              <div id="dropdown-lvl11" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                      <ul class="nav navbar-nav">
+                                         
+              
+                                         
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+            <!-- <li><a  [routerLink]="['/facturaHOME']" ><span class="glyphicon glyphicon-send"></span> FACTURACION</a></li>
+                  <li class="active"><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
+       -->
+                  <!-- Dropdown-->
+                
+
+                                  
+                              
+              </ul>
+           
+              <ul class="nav navbar-nav">
+
+                      
+
+              </ul>
+          
+          </div>
+      </nav>
+          
+          </div>
+      
+          <!-- Main Content -->
+          <div class="container-fluid">
+              <div class="side-body">
+             
+              </div>
+          </div>
+      </div>
